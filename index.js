@@ -11,7 +11,7 @@ const projetos = [
         nome: 'TrackMe',
         link: 'https://github.com/lucasfroque/TrackMe',
         descricao: 'O Aluraflix é um projeto desenvolvido durante o Alura Challenge Back-End, que consiste em criar uma API Restful para um sistema de vídeos como a netflix.',
-        tecnologias: ['Java', 'Springboot', 'H2 Database']
+        tecnologias: ['Java', 'Springboot', 'MySQL']
     }
 ]
 
