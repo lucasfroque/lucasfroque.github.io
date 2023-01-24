@@ -366,3 +366,9 @@ code {
 .footer-itens .whatsapp p{
     color: rgba(123, 74, 226, 0.5);
 }
+@media screen and (max-width: 912px){
+    body{
+        zoom: 0.4;
+    }
+}
+    
