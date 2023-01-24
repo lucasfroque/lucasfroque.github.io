@@ -4,21 +4,21 @@ const projetos = [
         nome: 'Alura-flix',
         link: 'https://github.com/lucasfroque/alura-flix',
         descricao: 'O Aluraflix é um projeto desenvolvido durante o Alura Challenge Back-End, que consiste em criar uma API Restful para um sistema de vídeos como a netflix.',
-        tecnologias: ['Java', 'Springboot', 'MySQL']
+        tecnologias: ['Java', 'Springboot', 'Spring Data', 'JWT', 'JUnit', 'MySQL']
     },
     {
         id: 2,
         nome: 'TrackMe',
         link: 'https://github.com/lucasfroque/TrackMe',
         descricao: 'TrackMe é uma APIRest  que permite cadastrar, buscar, atualizar e deletar um funcionário, além de definir estado, cidade, bairro e endereço através do CEP cadastrado.',
-        tecnologias: ['Java', 'Springboot', 'H2 Database']
+        tecnologias: ['Java', 'Springboot', 'PostgreSQL', 'Swagger', 'JUnit', 'Github Actions']
     },
     {
         id: 3,
         nome: 'Organo',
         link: 'https://github.com/lucasfroque/organo-react',
         descricao: 'Organo é um site que te permite criar times de desenvolvedores através de um formulário.',
-        tecnologias: ['React', 'HTML', 'CSS']
+        tecnologias: ['React', 'JavaScript', 'HTML', 'CSS']
     }
 ]
 
@@ -55,16 +55,19 @@ for(let i = 0; i < projetos.length; i++) {
     stacks.classList.add('stacks');
 
     for(let j = 0; j < projetos[i].tecnologias.length; j++) {
-        const stackDiv = document.createElement('div');
-        stacks.appendChild(stackDiv);
-        const stack = document.createElement('p');
-        stack.textContent = projetos[i].tecnologias[j];
-        stackDiv.appendChild(stack);
+            console.log(j)
+            if(projetos[i].tecnologias.length >= 9 && j === 8) {
+                const stackDiv = document.createElement('div');
+                stacks.appendChild(stackDiv);
+                const stack = document.createElement('p');
+                stack.textContent = '...';
+                stackDiv.appendChild(stack);
+                break;
+            }
+            const stackDiv = document.createElement('div');
+            stacks.appendChild(stackDiv);
+            const stack = document.createElement('p');
+            stack.textContent = projetos[i].tecnologias[j];
+            stackDiv.appendChild(stack);
     }
-
-    const link = document.createElement('a');
-    link.href = projetos[i].link;
-    link.textContent = 'Ver projeto';
-    projeto.appendChild(link);
-
 }
