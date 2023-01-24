@@ -29,7 +29,7 @@ code {
     box-sizing:border-box;
 }
 .border{
-    border-bottom: 0.01em;
+    border-bottom: 0.16px;
     border-bottom-style: solid;
     border-bottom-color: rgba(123, 74, 226, 0.3);
     padding-bottom: 150px;
