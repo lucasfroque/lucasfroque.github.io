@@ -4,14 +4,21 @@ const projetos = [
         nome: 'Alura-flix',
         link: 'https://github.com/lucasfroque/alura-flix',
         descricao: 'O Aluraflix é um projeto desenvolvido durante o Alura Challenge Back-End, que consiste em criar uma API Restful para um sistema de vídeos como a netflix.',
-        tecnologias: ['Java', 'Springboot', 'H2 Database']
+        tecnologias: ['Java', 'Springboot', 'MySQL']
     },
     {
         id: 2,
         nome: 'TrackMe',
         link: 'https://github.com/lucasfroque/TrackMe',
-        descricao: 'O Aluraflix é um projeto desenvolvido durante o Alura Challenge Back-End, que consiste em criar uma API Restful para um sistema de vídeos como a netflix.',
-        tecnologias: ['Java', 'Springboot', 'MySQL']
+        descricao: 'TrackMe é uma APIRest  que permite cadastrar, buscar, atualizar e deletar um funcionário, além de definir estado, cidade, bairro e endereço através do CEP cadastrado.',
+        tecnologias: ['Java', 'Springboot', 'H2 Database']
+    },
+    {
+        id: 3,
+        nome: 'Organo',
+        link: 'https://github.com/lucasfroque/organo-react',
+        descricao: 'Organo é um site que te permite criar times de desenvolvedores através de um formulário.',
+        tecnologias: ['React', 'HTML', 'CSS']
     }
 ]
 
